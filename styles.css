@@ -1,0 +1,90 @@
+/* Fundo branco do site */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Quadrado preto com sombra */
+  .quadrado {
+    background-color: rgb(0, 0, 0);
+    padding: 50px 30px;
+    color: white;
+    box-shadow: 0 4px 12px rgb(247, 2, 2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Menu dentro do quadrado */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    animation: slideDown 1s ease;
+  }
+  
+  /* Logo */
+  .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #f70202;
+  }
+  
+  /* Abas de navegação */
+  .abas a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .abas a:hover {
+    color: #f70202;
+  }
+  
+  /* Campo de busca */
+  .busca input {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .busca button {
+    padding: 6px 10px;
+    background-color: #f70202;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .busca button:hover {
+    background-color: #c80000;
+  }
+  
+  /* Conteúdo principal */
+  .conteudo {
+    padding: 30px;
+  }
+  
+  /* ✨ Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
